@@ -2,6 +2,7 @@
 
 一个基于 B/S 架构的人脸识别考勤系统。后端使用 Django + DRF，前端使用 Vue 3 + Vite + Element Plus，实现学生/教师/管理员多角色的考勤、请假与信息管理，支持人脸签到和 Excel 数据导出。
 
+- 采用内置管理员账号密码admin/admin，内置管理员创建学生与老师。
 ## 特性
 
 - 人脸签到：摄像头快速识别，防代打卡，签到体验自然
@@ -119,9 +120,4 @@ Face-Recognition-Attendance-System
 - 日志与监控：建议接入 Sentry/ELK 做错误追踪与审计
 - 接口文档：可补充 Swagger/OpenAPI 以利于前后端协作
 
-## 贡献
-
----
-
 注：当前 `requirements.txt` 依赖清单不完整，建议在本地环境验证后使用 `pip freeze > requirements.txt` 完整导出依赖并同步到仓库。
-```
